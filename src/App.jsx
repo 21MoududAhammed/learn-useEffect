@@ -1,8 +1,9 @@
-import InfiniteCounter from "./components/InfiniteCounter";
+import ControlledVideo from "./components/ControlledVideo";
+
 
 
 export default function App(){
     return (
-      <InfiniteCounter/>
+     <ControlledVideo/>
     );
 }

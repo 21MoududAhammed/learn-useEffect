@@ -5,10 +5,12 @@ export default function VideoPlayer({src, isPlaying}){
     useEffect(()=>{
         if(isPlaying){
             ref.current.play();
+            console.log('start')
         }else{
             ref.current.pause();
+            console.log('pause')
         }
-    })
+    },[isPlaying])
     return (
         <video src={src} ref={ref}></video>
     );
