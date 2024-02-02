@@ -1,5 +1,7 @@
+import ControlledVideo from "./components/ControlledVideo";
+
 export default function App(){
     return (
-        <h1>Hello</h1>
+        <ControlledVideo/>
     );
 }
