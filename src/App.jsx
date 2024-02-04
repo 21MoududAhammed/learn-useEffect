@@ -1,15 +1,7 @@
-import { useState } from 'react';
-import Playground from './components/Playground';
+import MyInput from "./components/Challenge";
 
-export default function App() {
-  const [show, setShow] = useState(false);
-  return (
-    <>
-      <button onClick={() => setShow(!show)}>
-        {show ? 'Unmount' : 'Mount'} the component
-      </button>
-      {show && <hr />}
-      {show && <Playground/>}
-    </>
-  );
+export default function App(){
+    return (
+       <MyInput/>
+    );
 }

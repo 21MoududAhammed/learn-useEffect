@@ -5,7 +5,7 @@ export default function Playground() {
 
   useEffect(() => {
     console.log('🔵 Schedule "' + text + '" log');
-    
+
     const timeoutId = setTimeout(() => {
       console.log("⏰ " + text);
     }, 3000);
