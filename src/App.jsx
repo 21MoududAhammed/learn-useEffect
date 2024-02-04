@@ -1,12 +1,6 @@
-import MyInput from "./components/challenge2";
+import Counter from "./components/Counter";
 
 
-export default function App(){
-    return (
-      <>
-      <MyInput shouldFocus={true}/>
-      <br /><br />
-      <MyInput shouldFocus={false}/>
-      </>
-    );
+export default function App() {
+  return <Counter />;
 }
