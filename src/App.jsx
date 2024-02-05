@@ -1,12 +1,14 @@
 import { useState } from "react";
-import ShowComments from "./components/ShowComments";
+import { items1, items2 } from "./utils/comments";
+import ItemDetails from "./components/ItemDetails";
 
 export default function App(){
-  const [userId, setUserId] = useState(1);
+  const [items, setItems] = useState(items1);
     return (
         <>
-        <button onClick={()=>setUserId(userId === 1 ? 2 : 1 )}>Switch to profile {userId === 1 ? 2 : 1} </button>
-        <ShowComments key={userId} userId={userId}/>
+        <button onClick={()=> setItems(items1)}>Items 1</button>
+        <button onClick={()=> setItems(items2)}>Items 2</button>
+        <ItemDetails items={items}/>
         </>
     );
 }

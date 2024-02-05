@@ -1,10 +1,13 @@
-const commentsArray = [
-    { userId: 1, comment: "Great post!" },
-    { userId: 2, comment: "Interesting topic." },
-    { userId: 3, comment: "I have a question." },
-    { userId: 4, comment: "Well explained!" },
-    // Add more objects as needed
-  ];
+const items1 = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
 
-  export default commentsArray;
-  
+const items2 = [
+  { id: 101, name: "John" },
+  { id: 2, name: "Jane" },
+  { id: 103, name: "Doe" },
+];
+
+export { items1, items2 };
